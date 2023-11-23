@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 50, 46);
+
+}
+.header{
+    text-align: center;
+    background-color: rgb(61, 54, 46);
+    color: white;
+    margin-bottom: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(53, 50, 46);
+}
+img{
+    width: 60%;
+}
+
+.about{
+    align-self: center;
+    text-align: center;
+    color: white;
+    width: 60%;
+    font-size: 1.2rem;
+}
