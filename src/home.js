@@ -1,10 +1,12 @@
 import Bg from './background.jpg';
 
-export default function home(){
+export default function home(headerEle){
 
     const contentContainer=document.querySelector('#content');
 
     const headerElement=(function(){
+        if(headerEle!=null)
+            return headerEle;
         const header_container=document.createElement('div');
         header_container.classList="header";
 
@@ -52,6 +54,7 @@ export default function home(){
 
         const img=new Image();
         img.src=Bg;
+        img.id="background";
 
         imageDiv.appendChild(img);
         return imageDiv;

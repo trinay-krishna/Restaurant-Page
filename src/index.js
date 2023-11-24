@@ -1,10 +1,8 @@
 import './styles.css';
 import setupHome from './home.js';
+import setupMenu from './menu.js';
 
-const contentContainer=document.querySelector('#content');
-const headerElement=setupHome();
-
-const setupNavigation=(function(){
+const setupNavigation=function(){
 
     const homeBtn=document.querySelector('#Home');
     const menuBtn=document.querySelector('#Menu');
@@ -16,7 +14,7 @@ const setupNavigation=(function(){
         homeBtn.addEventListener('click',
             ()=>{
                 contentContainer.textContent="";
-                setupHome();
+                setupHome(headerElement);
             }
         );
 
@@ -34,6 +32,8 @@ const setupNavigation=(function(){
             }
         );
     }
+};
 
-
-});
+const contentContainer=document.querySelector('#content');
+let headerElement=setupHome(null);
+setupNavigation();
