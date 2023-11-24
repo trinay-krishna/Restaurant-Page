@@ -18,9 +18,10 @@ ul{
 }
 .header{
     text-align: center;
-    background-color: rgb(61, 54, 46);
+    background-color: rgb(56, 53, 47);
     color: white;
     margin-bottom: 20px;
+    padding: 10px;
 }
 .image{
     display: flex;
