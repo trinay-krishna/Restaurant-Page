@@ -1,12 +1,13 @@
 import './styles.css';
 import setupHome from './home.js';
 import setupMenu from './menu.js';
+import setupContact from './contact.js';
 
 const setupNavigation=function(){
 
     const homeBtn=document.querySelector('#Home');
     const menuBtn=document.querySelector('#Menu');
-    const LocBtn=document.querySelector('#Loc');
+    const contactBtn=document.querySelector('#Contact');
     setupEventListeners();
 
     function setupEventListeners(){
@@ -25,10 +26,10 @@ const setupNavigation=function(){
             }
         );
 
-        LocBtn.addEventListener('click',
+        contactBtn.addEventListener('click',
             ()=>{
                 contentContainer.textContent="";
-                setupLocation(headerElement);
+                setupContact(headerElement);
             }
         );
     }
